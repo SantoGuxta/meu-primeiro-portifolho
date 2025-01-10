@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="circle">
+            <img src="imagem/foto 02 do portifolio.jpeg">
+        </div>
+
+        <h1>Gustavo dos Santos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="sobremim.htm">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bem-vindo ao meu portfólio pessoal</h2>
+            <p>Sou um  Desenvolvedor Full Stack Junior, sempre me especializando  na construção de sites e Programas 
+               que levam ao sucesso do projeto.</p>
+
+            <div class="text-box">
+                <a href="projetos.html" class="btn btn-white btn-animate">Projetos</a>
+            </div>
+        </section>
+
+        <aside>
+            <ul class="social-links">
+                <li><a href="https://github.com/SantoGuxta" target="_blank"><img src="imagem/logotipo-do-github.png"
+                            alt="github"></a></li>
+                <li><a href="https://www.linkedin.com/in/gustavo-santos-76406928a/" target="_blank"><img
+                            src="imagem/linkedin.png" alt="linkedin"></a></li>
+                <li><a href="https://www.instagram.com/alvesguxta/?hl=pt-br" target="_blank"><img
+                            src="imagem/instagram (1).png" alt="instagram"></a></li>
+            </ul>
+        </aside>
+        <br>
+        <br>
+        <h2>Sobre Mim</h2>
+        <p>Estudante em Analise e Desenvolvimento de Sistema em foco em full Stack altamente motivado, com paixão pela
+            resolução de problemas e criação de soluções inovadoras por meio da tecnologia. Com forte capacidade de
+            aprendizado e habilidades de colaboração, estou buscando oportunidades para aplicar meus conhecimentos e
+            crescer como profissional de TI.</p>
+           <br>
+           <br>
+            <h2>Me conheça!</h2>
+        <p>
+            Eu sou um <span>Desenvolvedor Web Frontend e Banckend</span> com foco em Frontend construindo sites e
+            aplicativos da Web que levam ao sucesso do projeto. Confira alguns dos meus projetos na seção
+            <span>Projetos</span>.
+        </p>
+
+
+        <p>
+            Também gosto de compartilhar conteúdo relacionado às coisas que tenho aprendido ao longo do tempo em
+            <span>Desenvolvimento Web</span>, então posso ajudar outras pessoas na comunidade Dev. Sinta-se à vontade
+            para se conectar ou me seguir no meu <span>LinkedIn</span>, onde eu compartilho conteúdo útil relacionado ao
+            desenvolvimento web e programação.
+        </p>
+
+        <p>
+            Estou aberto a oportunidades de <span>Trabalho</span> onde posso contribuir, aprender e crescer. Se você
+            tiver uma boa oportunidade que corresponde às minhas habilidades e experiência, não hesite em <span>entrar.
+                em contato</span>.
+        </p>
+
+        <h2>Minhas Habilidades</h2>
+
+        <p> HTML // CSS 
+
+        </p>
+        <P>JavaScript // Python //
+
+        </P>
+        <br>
+        <section>
+            <h1>Portifólio</h1>
+            <br>
+            <ul>
+                <div class="MarteAtaca">
+                    <img src="imagem/imagem do jogo nave 1.jpg">
+                    <img src="imagem/Imagem do jogo nave 2.jpg">
+                    <h3>
+                        <P>Esse jogo foi feito em Python. Quando era criança gostava de ir aos baras para jogar flipramas,
+                            e jogos de neves semrpe foram meus favoritos. 
+                        </P>
+                    </h3>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="minhaloja">
+                        <img src="imagem/imagem da loja.jpg">
+                        <img src="imagem/imagem do estoque.jpg">
+                        <img src="imagem/imagem da logistica da loja .jpg">
+                        
+                        <h3>
+                            <P>Esses progromas foram feitos com Python, com a ideia de simular um sistema de uma lojo dede a estoque, venta e entregas. </P>
+                        </h3>
+
+                        <div class="ListaPrioridade">
+                            <img src="imagem/imagem fila de paciente.jpg">
+                            <h3>
+                                <p>Esse programa foi feito pensando em uma lista de de chamada hospitalar, com a a vez dos pacientes dividas
+                                     por pioridade com vermelhos com prioridade e amarelos como normal.</p>
+                            </h3>
+
+                        <div class=" CopiaMecadoLivre"> 
+                            <img src="imagem/copia mercado livre.jpg">
+
+                            <h3>
+                                <p>Esse Design foi feito usando figma, com uma idaia para ser o mais parecido possivel com o app do mercadp livre no celurar.</p>
+                            </h3>
+
+                            
+
+                        </div>
+                        
+            </ul>
+
+        </section>
+        <br>
+        <section>
+            <h1>Formulário de Contato</h1>
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div id="message-container"></div>
+
+            <script>
+                document.getElementById("contact-form").addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const name = document.getElementById("nome").value;
+                    const email = document.getElementById("email").value;
+                    const message = document.getElementById("mensagem").value;
+                    const messageContainer = document.getElementById("message-container");
+
+                    // Validação simples: Verifica se os campos estão preenchidos.
+                    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                        const errorMessage = "Por favor, preencha todos os campos.";
+                        messageContainer.textContent = errorMessage;
+                        messageContainer.style.color = "red";
+                    } else {
+                        // Aqui você pode adicionar código para processar o formulário, como envio de e-mail.
+                        // Substitua o código abaixo com a lógica real de envio de e-mail.
+
+                        const successMessage = `Obrigado, ${name}! Sua mensagem foi enviada com sucesso.`;
+                        messageContainer.textContent = successMessage;
+                        messageContainer.style.color = "green";
+
+                        // Limpa os campos após o envio bem-sucedido.
+                        document.getElementById("nome").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("mensagem").value = "";
+                    }
+                });
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Luiz Gustavo</p>
+    </footer>
+</body>
+
+</html>
